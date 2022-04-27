@@ -14,6 +14,8 @@ function computerPlay(){
 
 function playround(playerSelection,computerSelection){
     let log = '';
+    console.log(`Computer Selection: ${computerSelection}`);
+    console.log(`player selection: ${playerSelection}`);
     if(computerSelection===playerSelection){
         log= "Match Drawn!!";
     }
@@ -32,9 +34,10 @@ function playround(playerSelection,computerSelection){
     else if(computerSelection === "paper" && playerSelection === "scissors"){
         log =  "You win!!";
     }
-    else if(computerSelection === "Paper" && playerSelection === "rock"){
+    else if(computerSelection === "paper" && playerSelection === "rock"){
         log =  "Computer wins!!";
     }
+
     return log;
 }
 
